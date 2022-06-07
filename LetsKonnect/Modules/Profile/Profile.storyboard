@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="pf7-OI-57A">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="twJ-Kp-fIg" customClass="ProfileViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9z-Hh-CxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iiE-VS-EBW">
+                                <rect key="frame" x="107" y="104" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="40z-88-n9F"/>
+                                    <constraint firstAttribute="height" constant="200" id="IZs-tM-psV"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eUw-wg-HmP">
+                                <rect key="frame" x="134" y="354" width="146" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-ml-yEK">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="35"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtV-zr-m3U">
+                                        <rect key="frame" x="0.0" y="45" width="146" height="19"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="199" translatesAutoresizingMaskIntoConstraints="NO" id="LgG-Jf-QPO">
+                                <rect key="frame" x="41.5" y="498" width="331.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQ3-x4-tUA">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Rq-CZ-MK7">
+                                        <rect key="frame" x="282.5" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3l-CZ-70t">
+                                <rect key="frame" x="182.5" y="751" width="49" height="31"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <state key="normal" title="logout"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SSd-eN-HLE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iiE-VS-EBW" firstAttribute="centerX" secondItem="s9z-Hh-CxQ" secondAttribute="centerX" id="4bn-sx-lxy"/>
+                            <constraint firstItem="iiE-VS-EBW" firstAttribute="top" secondItem="SSd-eN-HLE" secondAttribute="top" constant="60" id="NVa-DQ-Snl"/>
+                            <constraint firstItem="s3l-CZ-70t" firstAttribute="centerX" secondItem="s9z-Hh-CxQ" secondAttribute="centerX" id="Vs8-kb-W3i"/>
+                            <constraint firstItem="LgG-Jf-QPO" firstAttribute="centerX" secondItem="s9z-Hh-CxQ" secondAttribute="centerX" id="daM-gt-M6X"/>
+                            <constraint firstItem="eUw-wg-HmP" firstAttribute="centerX" secondItem="s9z-Hh-CxQ" secondAttribute="centerX" id="fbO-z5-ohO"/>
+                            <constraint firstItem="SSd-eN-HLE" firstAttribute="bottom" secondItem="s3l-CZ-70t" secondAttribute="bottom" constant="80" id="gOH-V7-98E"/>
+                            <constraint firstItem="eUw-wg-HmP" firstAttribute="top" secondItem="iiE-VS-EBW" secondAttribute="bottom" constant="50" id="kQa-Gg-idS"/>
+                            <constraint firstItem="LgG-Jf-QPO" firstAttribute="top" secondItem="eUw-wg-HmP" secondAttribute="bottom" constant="80" id="wVq-nx-3g7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="DtV-zr-m3U" id="fbb-Pa-MYb"/>
+                        <outlet property="logoutButton" destination="s3l-CZ-70t" id="PsC-jk-5iH"/>
+                        <outlet property="profileImageView" destination="iiE-VS-EBW" id="k53-3K-l80"/>
+                        <outlet property="usernameLabel" destination="QT7-ml-yEK" id="cBa-1D-yl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FKp-ne-7B6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

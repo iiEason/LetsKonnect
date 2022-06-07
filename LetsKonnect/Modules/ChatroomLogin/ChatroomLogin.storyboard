@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chatroom Login View Controller-->
+        <scene sceneID="c3K-N4-BPb">
+            <objects>
+                <viewController storyboardIdentifier="ChatroomLoginViewController" id="THl-89-eV5" customClass="ChatroomLoginViewController" customModule="ChatroomLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="szw-Gt-ibL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LetsKonnect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkh-Fh-f4g">
+                                <rect key="frame" x="98" y="129" width="218.5" height="57"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the following details and join the community chat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddJ-7A-dE3">
+                                <rect key="frame" x="57" y="226" width="300" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="t9J-WL-MHM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_female" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-39-4gE">
+                                <rect key="frame" x="147" y="323" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="bVk-Zj-vbm"/>
+                                    <constraint firstAttribute="width" constant="120" id="jvO-NA-e73"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="t8V-UH-YWG">
+                                <rect key="frame" x="129.5" y="483" width="155.5" height="87"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-AS-pfb">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wd-AF-mx4">
+                                        <rect key="frame" x="0.0" y="66.5" width="155.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttc-P2-cHW">
+                                <rect key="frame" x="185" y="723" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IPh-cJ-kdA"/>
+                                    <constraint firstAttribute="width" constant="44" id="V2v-gh-8ri"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="login"/>
+                                <connections>
+                                    <action selector="clickLogin:" destination="THl-89-eV5" eventType="touchUpInside" id="LjS-u2-OeJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-iH-XLh">
+                                <rect key="frame" x="180" y="681" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aLC-X2-VK9"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aWY-Qv-0Xh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7IO-39-4gE" firstAttribute="top" secondItem="ddJ-7A-dE3" secondAttribute="bottom" constant="40" id="1Dm-Jw-Yla"/>
+                            <constraint firstItem="7IO-39-4gE" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="K1D-MR-8gc"/>
+                            <constraint firstItem="ddJ-7A-dE3" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="K5W-Pj-eAl"/>
+                            <constraint firstItem="aWY-Qv-0Xh" firstAttribute="bottom" secondItem="ttc-P2-cHW" secondAttribute="bottom" constant="95" id="KiE-xW-s4x"/>
+                            <constraint firstItem="ttc-P2-cHW" firstAttribute="top" secondItem="KiI-iH-XLh" secondAttribute="bottom" constant="12" id="MfL-jL-3m2"/>
+                            <constraint firstItem="t8V-UH-YWG" firstAttribute="top" secondItem="7IO-39-4gE" secondAttribute="bottom" constant="40" id="Sxx-HI-jal"/>
+                            <constraint firstItem="Hkh-Fh-f4g" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="aL7-ZU-wij"/>
+                            <constraint firstItem="ttc-P2-cHW" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="bM8-bW-E2A"/>
+                            <constraint firstItem="Hkh-Fh-f4g" firstAttribute="top" secondItem="aWY-Qv-0Xh" secondAttribute="top" constant="85" id="cbp-AX-h7U"/>
+                            <constraint firstItem="ddJ-7A-dE3" firstAttribute="top" secondItem="Hkh-Fh-f4g" secondAttribute="bottom" constant="40" id="lbG-N1-9fy"/>
+                            <constraint firstItem="KiI-iH-XLh" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="rNq-ki-4Yw"/>
+                            <constraint firstItem="t8V-UH-YWG" firstAttribute="centerX" secondItem="szw-Gt-ibL" secondAttribute="centerX" id="w32-fW-HSO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="7IO-39-4gE" id="ia1-Kr-zPK"/>
+                        <outlet property="descriptionLabel" destination="ddJ-7A-dE3" id="2qM-b8-DbI"/>
+                        <outlet property="loginButton" destination="ttc-P2-cHW" id="nOl-tO-L63"/>
+                        <outlet property="signUpButton" destination="KiI-iH-XLh" id="SGP-No-9Gz"/>
+                        <outlet property="titleLbael" destination="Hkh-Fh-f4g" id="IBU-RH-Jhb"/>
+                        <outlet property="userEmail" destination="2wd-AF-mx4" id="fhH-ww-bl0"/>
+                        <outlet property="userName" destination="kkJ-AS-pfb" id="gv7-5v-TiT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbB-xl-caY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_female" width="72" height="72"/>
+        <image name="login" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

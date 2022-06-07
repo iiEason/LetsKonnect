@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="2A8-5o-yDs">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="efK-gy-l6w" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9RK-fP-zl6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-56-x9e">
+                                <rect key="frame" x="127" y="124" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="fUt-SI-tSY"/>
+                                    <constraint firstAttribute="height" constant="160" id="yEV-fo-4Kv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LetsKonnect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enp-bn-OIn">
+                                <rect key="frame" x="98" y="324" width="218.5" height="57"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RealTime messaging made easy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rht-No-FOS">
+                                <rect key="frame" x="107" y="401" width="200" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Cvg-lv-dgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based community chat app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-SW-yFm">
+                                <rect key="frame" x="107" y="483.5" width="200" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ga2-FI-nhG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c71-oK-0nj">
+                                <rect key="frame" x="185" y="718" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5my-O6-gkh"/>
+                                    <constraint firstAttribute="width" constant="44" id="nLI-83-ia4"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onStartTapped:" destination="efK-gy-l6w" eventType="touchUpInside" id="lSJ-Y6-Mrd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U1M-Yi-NWZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fBr-56-x9e" firstAttribute="centerX" secondItem="9RK-fP-zl6" secondAttribute="centerX" id="02x-hK-AcF"/>
+                            <constraint firstItem="enp-bn-OIn" firstAttribute="centerX" secondItem="9RK-fP-zl6" secondAttribute="centerX" id="05U-Xe-Dc8"/>
+                            <constraint firstItem="c71-oK-0nj" firstAttribute="centerX" secondItem="9RK-fP-zl6" secondAttribute="centerX" id="4HQ-De-neJ"/>
+                            <constraint firstItem="lOy-SW-yFm" firstAttribute="top" secondItem="Rht-No-FOS" secondAttribute="bottom" constant="20" id="ICc-VM-1pT"/>
+                            <constraint firstItem="Rht-No-FOS" firstAttribute="centerX" secondItem="9RK-fP-zl6" secondAttribute="centerX" id="IlD-Tg-MTd"/>
+                            <constraint firstItem="U1M-Yi-NWZ" firstAttribute="bottom" secondItem="c71-oK-0nj" secondAttribute="bottom" constant="100" id="QzI-s5-OfN"/>
+                            <constraint firstItem="enp-bn-OIn" firstAttribute="top" secondItem="fBr-56-x9e" secondAttribute="bottom" constant="40" id="RXO-VR-TVb"/>
+                            <constraint firstItem="lOy-SW-yFm" firstAttribute="centerX" secondItem="9RK-fP-zl6" secondAttribute="centerX" id="a1H-kT-B1p"/>
+                            <constraint firstItem="fBr-56-x9e" firstAttribute="top" secondItem="U1M-Yi-NWZ" secondAttribute="top" constant="80" id="fLA-1f-5lF"/>
+                            <constraint firstItem="Rht-No-FOS" firstAttribute="top" secondItem="enp-bn-OIn" secondAttribute="bottom" constant="20" id="zoX-Qy-f05"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="lOy-SW-yFm" id="f9c-q3-TQb"/>
+                        <outlet property="logoImageView" destination="fBr-56-x9e" id="0Aw-5E-z90"/>
+                        <outlet property="startButton" destination="c71-oK-0nj" id="VKa-Bt-rrh"/>
+                        <outlet property="subtitleLabel" destination="Rht-No-FOS" id="xo1-sI-yV6"/>
+                        <outlet property="titleLabel" destination="enp-bn-OIn" id="0V5-TD-ErK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNl-A2-jW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="-56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
