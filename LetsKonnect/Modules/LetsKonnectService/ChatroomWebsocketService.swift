@@ -78,6 +78,10 @@ extension ChatroomWebsocketService: AccountWebsocketAPI {
 
 extension ChatroomWebsocketService: ChatroomWebsocketAPI {
     
+    /// 登录
+    /// - Parameters:
+    ///   - username: 用户名
+    ///   - email: 用户密码
     public func login(username: String,
                       email: String) {
         print("login request received for username: \(username) and email: \(email)")
